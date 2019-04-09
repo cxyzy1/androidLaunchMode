@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private val tag = MainActivity::class.java.simpleName+"11"
+    private val tag = MainActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         log(tag, "onCreate")
