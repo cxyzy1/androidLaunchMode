@@ -11,14 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cxyzy.demo.MainActivity">
+        <activity android:name="com.cxyzy.demo.AActivity" android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"/>
+        <activity android:name=".BActivity"/>
+        <activity android:name=".CActivity" android:launchMode="singleTask"/>
+        <activity android:name=".DActivity"/>
+        <activity android:name=".EActivity" android:launchMode="singleTask"/>
+        <activity android:name=".FActivity"/>
     </application>
 
 </manifest>
