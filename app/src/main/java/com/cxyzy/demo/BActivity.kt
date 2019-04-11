@@ -1,7 +1,6 @@
 package com.cxyzy.demo
 
 import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_a.*
 
