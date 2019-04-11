@@ -6,17 +6,12 @@ import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_a.*
 
-class EActivity : AppCompatActivity() {
-    private val tag = EActivity::class.java.simpleName
+class EActivity : BaseActivity() {
+    override var tag = EActivity::class.java.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
-        log(tag, "onCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_e)
         button.setOnClickListener { startActivity(Intent(this, FActivity::class.java)) }
-    }
-    override fun onDestroy() {
-        log(tag, "onDestroy")
-        super.onDestroy()
     }
 
 }

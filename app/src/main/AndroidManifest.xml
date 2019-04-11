@@ -19,9 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".BActivity"/>
-        <activity android:name=".CActivity" android:launchMode="singleTask"/>
-        <activity android:name=".DActivity"/>
-        <activity android:name=".EActivity" android:launchMode="singleTask"/>
+        <activity android:name=".CActivity" android:launchMode="singleTask" android:taskAffinity=".test"/>
+        <activity android:name=".DActivity" android:launchMode="singleInstance"/>
+        <activity android:name=".EActivity" android:launchMode="singleInstance"/>
         <activity android:name=".FActivity"/>
     </application>
 
