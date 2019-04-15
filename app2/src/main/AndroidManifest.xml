@@ -11,18 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cxyzy.demo2.AActivity" android:launchMode="singleTask" >
+        <activity
+            android:name="com.cxyzy.demo2.A2Activity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cxyzy.demo2.BActivity"/>
-        <activity android:name="com.cxyzy.demo2.CActivity" android:launchMode="singleTask" android:taskAffinity=".test"/>
-        <activity android:name="com.cxyzy.demo2.DActivity" android:launchMode="singleInstance"/>
-        <activity android:name="com.cxyzy.demo2.EActivity" android:launchMode="singleInstance"/>
-        <activity android:name="com.cxyzy.demo2.FActivity"/>
+        <activity android:name="com.cxyzy.demo2.B2Activity" />
+        <activity android:name="com.cxyzy.demo2.C2Activity"/>
+        <activity android:name="com.cxyzy.demo2.D2Activity"/>
+        <activity
+            android:name="com.cxyzy.demo2.E2Activity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=".test">
+            <intent-filter>
+                <action android:name="devdiv.intent.action.activity4" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cxyzy.demo2.F2Activity" />
     </application>
 
 </manifest>

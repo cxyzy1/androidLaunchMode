@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cxyzy.demo2">
+    package="com.cxyzy.demo">
 
     <application
         android:allowBackup="false"
@@ -11,18 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cxyzy.demo2.AActivity" android:launchMode="singleTask" >
+        <activity android:name=".AActivity" android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cxyzy.demo2.BActivity"/>
-        <activity android:name="com.cxyzy.demo2.CActivity" android:launchMode="singleTask" android:taskAffinity=".test"/>
-        <activity android:name="com.cxyzy.demo2.DActivity" android:launchMode="singleInstance"/>
-        <activity android:name="com.cxyzy.demo2.EActivity" android:launchMode="singleInstance"/>
-        <activity android:name="com.cxyzy.demo2.FActivity"/>
+        <activity android:name=".BActivity"/>
+        <activity android:name=".CActivity" android:launchMode="singleTask" android:taskAffinity=".test" />
+        <activity android:name=".DActivity"/>
+        <activity android:name=".EActivity"/>
+        <activity android:name=".FActivity"/>
     </application>
 
 </manifest>

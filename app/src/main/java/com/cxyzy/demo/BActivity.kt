@@ -1,4 +1,4 @@
-package com.cxyzy.demo2
+package com.cxyzy.demo
 
 import android.content.Intent
 import android.os.Bundle
