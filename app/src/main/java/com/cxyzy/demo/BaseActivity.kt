@@ -2,7 +2,6 @@ package com.cxyzy.demo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.cxyzy.demo2.log
 
 open class BaseActivity : AppCompatActivity() {
     open var tag = BaseActivity::class.java.simpleName

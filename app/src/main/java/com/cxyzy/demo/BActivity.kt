@@ -9,7 +9,12 @@ class BActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)
-        val intent = Intent(this, CActivity::class.java)
+        val intent = Intent(this, BActivity::class.java)
         button.setOnClickListener { startActivity(intent) }
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        log(tag,"onNewIntent")
+        super.onNewIntent(intent)
     }
 }

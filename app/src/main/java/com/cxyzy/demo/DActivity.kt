@@ -9,7 +9,7 @@ class DActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_d)
-        val intent = Intent("devdiv.intent.action.activity4")
+        val intent = Intent("com.cxyzy.demo.E2Activity")
 
         button.setOnClickListener { startActivity(intent) }
     }

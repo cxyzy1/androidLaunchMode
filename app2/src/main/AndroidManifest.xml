@@ -26,10 +26,9 @@
         <activity
             android:name="com.cxyzy.demo2.E2Activity"
             android:exported="true"
-            android:launchMode="singleTask"
-            android:taskAffinity=".test">
+            android:launchMode="singleTask">
             <intent-filter>
-                <action android:name="devdiv.intent.action.activity4" />
+                <action android:name="com.cxyzy.demo.E2Activity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
